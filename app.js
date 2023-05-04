@@ -24,7 +24,7 @@ app.use("/api", mainRoute);
 
 app.get("/", (req, res) => {
     return res.status(200).send(
-        "<h1>Empezando a crear un api rest con node</h1>"
+        "<h1>The only available endpoint: /api/products</h1>"
     );
 });
 
