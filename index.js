@@ -6,7 +6,7 @@ console.log("App de node arrancada");
 
 // Crear servidor Node
 const app = express();
-const puerto = 3900;
+const puerto = 'https://api-shopify-eight.vercel.app/';
 
 // Configurar cors
 app.use(cors());
