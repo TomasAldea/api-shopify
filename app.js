@@ -6,7 +6,7 @@ console.log("App de node arrancada");
 
 // Crear servidor Node
 const app = express();
-const puerto = 'https://api-shopify-eight.vercel.app/';
+const puerto = 3900//'https://api-shopify-eight.vercel.app/';
 
 // Configurar cors
 app.use(cors());
@@ -24,7 +24,7 @@ app.use("/api", mainRoute);
 
 app.get("/", (req, res) => {
     return res.status(200).send(
-        "<h1>The only available endpoint: /api/products</h1>"
+        //"<h1>The only available endpoint: /api/products</h1>"
     );
 });
 
