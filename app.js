@@ -1,12 +1,10 @@
 const express = require("express");
 const cors = require("cors");
-
-// Inicializar app
-console.log("App de node arrancada");
+require("dotenv").config();
 
 // Crear servidor Node
 const app = express();
-const puerto = 3900//'https://api-shopify-eight.vercel.app/';
+const puerto = process.env.PORT || 3900;
 
 // Configurar cors
 app.use(cors());
